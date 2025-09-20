@@ -1,16 +1,36 @@
+*{
+  display: inherit;
+}
+
+div.card{
+  display: block;
+}
+
+head, script{
+  display: none;
+}
+
 body {
   background: #eee;
   font-family: sans-serif;
+  display: block;
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+}
+
+.card *:not(:nth-last-child(1)){
+  margin-bottom: 8px;
+  padding: 8px;
 }
 
 .content {
@@ -19,9 +39,13 @@ body {
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 8px 24px;
 }
